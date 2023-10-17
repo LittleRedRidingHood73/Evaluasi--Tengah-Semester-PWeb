@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="slider/style-slider.css">
+</head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg" style="background-color: #363062;">
+            <div class="container-fluid">   
+                <a class="navbar-brand" href="main_menu.html">
+                    <div class="row">
+                        <div class="col">
+                            <div class="container" style="border: solid white; padding: 10px; border-radius: 50%; background-color: white;"><img src="logo2.svg" alt="logo" width="40px" height="40px"></div>
+                        </div>
+                        <div class="col" style="color: whitesmoke; padding: 0px;">
+                            <div class="row">
+                                <h1 style="font-family: 'Inter', sans-serif; margin: 0px;">SNL</h1>
+                            </div>
+                            <div class="row">
+                                <h6 style="font-family: 'Inter', sans-serif; font-size: 10px;">Surabaya National Library</h3>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav" style="margin-left: 50px;">
+                <ul class="navbar-nav">
+                    <li class="nav-item navigasi-link navigasi-jarak">
+                        <a class="nav-link navigasi-link" aria-current="page" href="#" style="font-family: 'Inter', sans-serif; margin: 0px;">Collections</a>
+                    </li>
+                    <li class="nav-item navigasi-link navigasi-jarak">
+                        <a class="nav-link navigasi-link" href="#" style="font-family: 'Inter', sans-serif; margin: 0px;">Find Us</a>
+                    </li>
+                    <li class="nav-item navigasi-link navigasi-jarak">
+                        <a class="nav-link navigasi-link" href="#" style="font-family: 'Inter', sans-serif; margin: 0px;">Map</a>
+                    </li>
+                    <li class="nav-item navigasi-link navigasi-jarak">
+                        <a class="nav-link navigasi-link" href="#" style="font-family: 'Inter', sans-serif; margin: 0px;">News</a>
+                    </li>
+                </ul>
+                <div class="row me-0 justify-content-between    ">
+                    <div class="col">
+                        <div class="row">
+                            <a href="login.html"><h6 style="color: rgb(52, 101, 204); margin-top: 5px;">Sign Up!</h6></a>
+                        </div>
+                        <div class="row">
+                            <p style="color: white; font-size: 10px; white-space: nowrap;">Not signed up</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <a href="login.html">
+                            <img src="default-profile.jpg" width="65px" height="65px" style="border: white; border-radius: 50%;">
+                        </a>
+                    </div>
+                </div>
+            </div>    
+            </div>
+      </nav>
+
+      <div class="container-fluid ps-md-0">
+        <div class="row g-0">
+          <div class="d-none d-md-flex col-md-3 col-lg-3"></div>
+          <div class="col-md-6 col-lg-6" style="background-color: white;">
+            <div class="login d-flex py-5">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-9 col-lg-8 mx-auto">
+                    <div class="text-center mb-4">
+                      <img src="download.png" alt="">
+                    </div>
+                    <h3 class="login-heading mb-0" style="color: black; font-family: 'Inter', sans-serif; font-weight: 500;">Join Us</h3>
+                    <p style="display: inline-block;">Already have an account?</p>
+                    <a href="#">
+                        <p style="display: inline-block;">Login</p>
+                    </a>
+                    <form name="form" onsubmit="return validateForm()">
+                        <div class="form-floating mb-4">
+                            <input type="text" class="form-control" name="fName">
+                            <label for="floatingInput">First Name</label>
+                        </div>
+                        <div class="form-floating mb-4">
+                            <input type="text" class="form-control" name="lName">
+                            <label for="floatingPassword">Last Name</label>
+                        </div>
+                        <div class="form-floating mb-4">
+                            <input type="password" class="form-control" name="pass">
+                            <label for="floatingPassword">Password</label>
+                        </div>
+                        <div class="form-floating mb-4">
+                            <input type="text" class="form-control" name="phone">
+                            <label for="floatingInput">Phone Number</label>
+                        </div>
+                        <div class="form-floating mb-4">
+                            <input type="text" class="form-control" name="adress">
+                            <label for="floatingInput">Adress</label>
+                        </div>
+                        <div class="form-floating mb-4">
+                            <input type="text" class="form-control" id="ID">
+                            <label for="floatingInput">Identification Number</label>
+                        </div>
+                        <div class="form-group mb-4">
+                            <label for="dateInput">Date of Birth</label>
+                            <input type="date" class="form-control" name="dob">
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <div class="form-check mb-0">
+                                <label class="form-check-label" for="form2Example3">I agree to </label>
+                                <a href="#">the terms and conditions</a>
+                                <input class="form-check-input me-2" type="checkbox" value="1" id="form2Example3" name="terms"/>
+                            </div>
+                        </div>
+                    
+                        <div class="text-center text-lg-start mt-4 pt-2" style="color: whitesmoke">
+                            <button type="submit" class="btn btn-primary btn-lg" style="padding-left: 2.5rem; padding-right: 2.5rem;">Sign Me Up!</button>
+                        </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <script>
+        function validateForm() {
+            if (document.forms["form"]["fName"].value == "") {
+                alert("Name cannot be empty!");
+                document.forms["form"]["fName"].focus();
+                return false;
+            }
+            if (document.forms["form"]["lName"].value == "") {
+                alert("Name cannot be empty!");
+                document.forms["form"]["lName"].focus();
+                return false;
+            }
+            if (document.forms["form"]["phone"].value == "") {
+                alert("Phone number cannot be empty");
+                document.forms["form"]["phone"].focus();
+                return false;
+            }
+            if (document.forms["form"]["adress"].value == "") {
+                alert("Adress cannot be empty");
+                document.forms["form"]["adress"].focus();
+                return false;
+            }
+            if (document.forms["form"]["ID"].value == "") {
+                alert("ID cannot be empty");
+                document.forms["form"]["ID"].focus();
+                return false;
+            }
+            if (document.forms["form"]["dob"].value == "") {
+                alert("Date of birth cannot be empty");
+                document.forms["form"]["dob"].focus();
+                return false;
+            }
+            if (document.forms["form"]["terms"].value != "1") {
+                alert("You must agree to the terms and conditions to continue");
+                document.forms["form"]["terms"].focus();
+                return false;
+            }else{
+                event.preventDefault();
+                window.location.href = 'main_menu_fauzan.html';
+            }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
